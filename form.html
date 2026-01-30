@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="nav-bar">
+  <h1 class="ksam-logo">KSAM <span class="inc">INC</span> </h1>
+  <h2>Design & Tech Solutions</h2>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="form.html">Form</a>|
+    <a href="media.html">Media</a>
+  </nav>
+
+  <hr>
+</header>
+
+
+<main class="container-form">
+
+
+  <h2>Client Registration Form</h2>
+
+  <form action="#" method="post">
+
+    <fieldset class="Personal-information">
+      <legend>Personal Information</legend>
+
+      <label for="name" >Full Name:</label><br>
+      <input type="text" class="input-text" id="name" name="name" placeholder="eg: KWIZERA Alex"><br><br>
+
+      <label for="email" >Email Address:</label><br>
+      <input type="email"  class="input-text" id="email" name="email"><br><br>
+
+      <label for="Telephone" ">Telephone:</label><br>
+      <input type="tel" class="input-text" name="phone"><br><br>
+
+      <label for="password" >Password:</label><br>
+      <input type="password" class="input-text" id="password" name="password"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" class="input-text" id="dob" name="dob"><br><br>
+
+      <label for="dob">Upload profile Picture</label><br>
+      <input type="file"    class="input-file" name="image"><br><br>
+
+      <label>input your favorite Color:</label><br>
+    <input type="color" id="color" class="input-color"  name="fcolor"><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Service Details</legend>
+
+      <label>Gender:</label><br>
+      <input type="radio" class="radio" name="gender" value="male"> Male<br>
+      <input type="radio"  class="radio" name="gender" value="female"> Female<br><br>
+
+      <label>Services Needed:</label><br>
+      <input type="checkbox" class="radio" name="service" value="web"> Web Design<br>
+      <input type="checkbox" class="radio" name="service" value="system"> System Development<br>
+      <input type="checkbox" class="radio" name="service" value="support"> IT Support<br><br>
+
+      <label for="serviceType">Service Type:</label><br>
+      <select id="serviceType" class="radio" name="serviceType">
+        <optgroup label="Design" class="radio">
+          <option>UI/UX Design</option>
+          <option>Web Design</option>
+          <option>Banner Design</option>
+          <option>LOGO Design</option>
+        </optgroup>
+        <optgroup label="Technology" class="radio">
+          <option>System Development</option>
+          <option>IT Support</option>
+          <option>CCTV Camera Installation</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="budget" >Project/Service Budget:</label><br>
+      <input list="budgets"  class="radio"id="budget" name="budget">
+      <datalist id="budgets">
+        <option value="500,000 RWF">
+        <option value="1,000,000 RWF">
+        <option value="2,000,000 RWF">
+            <option value="50,000 RWF"></option>
+      </datalist><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+
+      <output name="result" class="radio">Ready to submit</output>
+    </fieldset>
+
+    <br>
+
+    <button type="submit" class="submit">Submit</button>
+    <button type="reset" class="reset">Reset</button>
+
+  </form>
+
+</main>
+
+
+<footer>
+  <hr>
+  <p>
+    <small>&copy; 2026 KSAM Inc – Design & Tech Solutions</small>
+  </p>
+</footer>
+</body>
+</html>
